@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/artice-one', function (req,res){
-res.send('Artice one requested :-)) and will be served here');
+res.send('Artice one requested :-) and will be served here');
 });
 
 app.get('/article-two', function (req, res) {
