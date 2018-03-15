@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+'article-one' : {
   title: 'Article One | Vimalkumar S',
   heading: 'Article One',
   date: '15-MAR-2018',
@@ -20,6 +21,39 @@ var articleOne = {
         <p>
             Let me continue my journey of learning IMAD
         </p>`
+},
+ 'article-three' : {
+    title: 'Article Three | Vimalkumar S',
+  heading: 'Article Three',
+  date: '15-MAR-2018',
+  content: `
+  <p>
+             This is my 3rd article and learning new things,  But the errors are too much  Let me try my best
+            </p>
+          <p>
+            Hope things will get improved.
+          </p>
+        
+        <p>
+            Let me continue my journey of learning IMAD
+        </p>`
+},
+'article-four' : {
+    title: 'Article four | Vimalkumar S',
+  heading: 'Article four',
+  date: '15-MAR-2018',
+  content: `
+  <p>
+             This is my 4th article and learning new things,  But the errors are too much  Let me try my best
+            </p>
+          <p>
+            Hope things will get improved.
+          </p>
+        
+        <p>
+            Let me continue my journey of learning IMAD
+        </p>`
+}
 };
 
 function createTemplate(data){
@@ -66,17 +100,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-two', function (req, res) {
-   res.send(createTemplate(articleOne));
+app.get('/:articleName', function (req, res) {
+    var articleName = req.params.articleName; 
+   res.send(createTemplate(articles(articleName)));
 });
 
-app.get('/article-three', function (req, res) {
- res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
 
-app.get('/article-four', function (req, res) {
-res.sendFile(path.join(__dirname, 'ui', 'article-four.html'));
-});
 
 
 app.get('/ui/style.css', function (req, res) {
