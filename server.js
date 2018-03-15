@@ -19,7 +19,6 @@ var articleOne = {
         <p>
             Let me continue my journey of learning IMAD
         </p>`
-
 };
 
 function createTemplate(data){
