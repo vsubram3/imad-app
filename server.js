@@ -9,7 +9,8 @@ var articleOne = {
   title: 'Article One | Vimalkumar S',
   heading: 'Article One',
   date: '15-MAR-2018',
-  content: `<p>
+  content: `
+  <p>
              This is my first article and learning new things,  But the errors are too much  Let me try my best
             </p>
           <p>
