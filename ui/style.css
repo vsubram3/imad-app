@@ -1,7 +1,7 @@
 body {
     font-family: times-roman;
-    background-color: pink;
-    margin-top: 75px;
+    background-color: maroon;
+    margin-top: 60px;
 }
 
 .center {
@@ -21,7 +21,6 @@ body {
 }
 .container {
             max-width: 800px;
-            margin: 0 auto;
             color: Blue;
             font-family: sans-serif;
             padding-top: 60px;
