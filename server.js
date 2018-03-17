@@ -9,7 +9,7 @@ var articles= {
 'article-one' : {
   title: 'Article One | Vimalkumar S',
   heading: 'Article One',
-  date: '15-MAR-2018',
+  date: '17-MAR-2018',
   content: `
   <p>
              This is my first article and learning new things,  But the errors are too much  Let me try my best
@@ -25,7 +25,7 @@ var articles= {
 'article-three' : {
     title: 'Article Three | Vimalkumar S',
   heading: 'Article Three',
-  date: '15-MAR-2018',
+  date: '17-MAR-2018',
   content: `
   <p>
              This is my 3rd article and learning new things,  But the errors are too much  Let me try my best
@@ -41,7 +41,7 @@ var articles= {
 'article-four' : {
     title: 'Article four | Vimalkumar S',
   heading: 'Article four',
-  date: '15-MAR-2018',
+  date: '17-MAR-2018',
   content: `
   <p>
              This is my 4th article and learning new things,  But the errors are too much  Let me try my best
